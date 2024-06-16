@@ -656,6 +656,36 @@ const AddUser = () => {
     </Col>
     <Col xs={8}>
         <h1>hello</h1>
+
+        <Table striped bordered hover size="sm">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Title</th>
+          <th>Description</th>
+          <th>category</th>
+          <th>Price</th>
+          <th>rating</th>
+        
+          
+        </tr>
+      </thead>
+      <tbody>
+      {userdata.map((users,index)=>(
+        <tr key={index}>
+          <td>{users.id}</td>
+          <td>{users.title}</td>
+          <td>{users.description}</td>
+          <td>{users.category}</td>
+          <td>{users.price}</td>
+          <td>{users.rating}</td>
+         
+        </tr>
+      ))}
+       
+       
+      </tbody>
+    </Table>
     </Col>
     </Row>
    </Container>
